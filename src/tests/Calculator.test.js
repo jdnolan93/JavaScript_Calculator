@@ -22,7 +22,7 @@ describe('Calculator', () => {
   it('should be able to add (1 + 4 = 5)', () => {
     const button1 = container.find('#number1')
     const button4 = container.find('#number4')
-    const buttonAdd = container.find('#operator-add')
+    const buttonAdd = container.find('#operator_add')
     const buttonEquals = container.find('#operator-equals')
     const runningTotal = container.find('#running-total')
     button1.simulate('click')
@@ -101,7 +101,7 @@ describe('Calculator', () => {
   it('should be able to clear the running total without affecting the calculation', () => {
     const button1 = container.find('#number1')
     const button4 = container.find('#number4')
-    const buttonAdd = container.find('#operator-add')
+    const buttonAdd = container.find('#operator_add')
     const buttonEquals = container.find('#operator-equals')
     const buttonClear = container.find('#clear')
     const runningTotal = container.find('#running-total')
